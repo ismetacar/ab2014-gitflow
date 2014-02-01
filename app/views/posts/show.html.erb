@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Ad:</strong>
+  <%= @post.name %>
+</p>
+
+<p>
+  <strong>Başlık:</strong>
+  <%= @post.title %>
+</p>
+
+<p>
+  <strong>İçerik:</strong>
+  <%= @post.content %>
+</p>
+
+<%= link_to 'Düzenle', edit_post_path(@post) %> |
+<%= link_to 'Geri', posts_path %>
